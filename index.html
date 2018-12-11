@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Orapma Telecomunicações - Novos Planos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Orapma</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
+              aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="container">
+        
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron">
+              <h1 class="display-3">Novos planos de Telefonia!</h1>
+              <p>Estamos colocando um novo produto no mercado chamado FaleMais. 
+                Voce paga um valor fixo e depois só paga os minutos excedentes. 
+                 Assim vc falar mais e pagar menos...</p>
+              <p><a class="btn btn-primary btn-lg" href="#" role="button">Simule sua fatura</a></p>
+          </div>
+        <!-- Example row of columns -->
+        
+        <div class="row">
+          <div class="col-md-4">
+            <h2>FaleMais 30</h2>
+            <p>Com esse plano vc pode falar 30 minutos pelo valor de seu plano e so paga o excedente</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>FaleMais 60</h2>
+            <p>Com esse plano vc pode falar 60 minutos pelo valor de seu plano e so paga o excedente</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>FaleMais 120</h2>
+            <p>Com esse plano vc pode falar 120 minutos pelo valor de seu plano e so paga o excedente</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mt-3">
+              <h2>Simule os preço da sua fatura</h2>
+              
+            </div>
+            
+            <table id="table_price" class="table order-list table-hover">
+              <thead>
+                  <tr>
+                      <th>Origem</th>
+                      <th>Destino</th>
+                      <th>Tempo</th>
+                      <th>Plano FaleMais</th>
+                      <th>Com FaleMais</th>
+                      <th>Sem FaleMais</th>
+                      <th></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                        <select class="form-control" name="source">
+                          <option value="">Selecione a Origem</option>
+                          <option value="11">011</option>
+                          <option value="16">016</option>
+                          <option value="17">017</option>
+                          <option value="18">018</option>
+                        </select>
+                      </td>
+                      <td>
+                       <select class="form-control" name="destino">
+                          <option value="">Selecione o Destino</option>
+                          <option value="11">011</option>
+                          <option value="16">016</option>
+                          <option value="17">017</option>
+                          <option value="18">018</option>
+                        </select>
+                      </td>
+                      <td>
+                          <input type="text" name="time"  class="form-control"/>
+                      </td>
+                      <td>
+                        <select class="form-control" name="plano">
+                          <option value="">Selecione o Plano</option>
+                          <option value="30">FaleMais 30</option>
+                          <option value="60">FaleMais 60</option>
+                          <option value="120">FaleMais 120</option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="with_plano"></span>
+                      </td>
+                      <td>
+                        <span class="without_plano"></span>
+                      </td>
+                      <td></td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="7" style="text-align: left;">
+                          <input type="button" class="btn btn-lg btn-block " id="addrow" value="Adicionar Linha" />
+                      </td>
+                  </tr>
+                  <tr></tr>
+              </tfoot>
+          </table>
+            
+            
+          </div>
+        </div>
+        
+        
+        
+        
+      </div>
+    </main>
+    <footer class="container">
+      <p>&copy; Camila Lima 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
