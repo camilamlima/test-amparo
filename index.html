@@ -13,6 +13,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
+    <style type="text/css">
+      .card-header{
+        color: #fff;
+      }
+    </style>
     
   </head>
 
@@ -31,7 +36,7 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="https://github.com/camilamlima/test-amparo">GitHub</a>
           </li>
         </ul>
       </div>
@@ -46,36 +51,44 @@
               <p>Estamos colocando um novo produto no mercado chamado FaleMais. 
                 Voce paga um valor fixo e depois só paga os minutos excedentes. 
                  Assim vc falar mais e pagar menos...</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Simule sua fatura</a></p>
+              <p><a class="btn btn-primary btn-lg" href="#simule" role="button">Simule sua fatura</a></p>
           </div>
         <!-- Example row of columns -->
         
-        <div class="row">
-          <div class="col-md-4">
-            <h2>FaleMais 30</h2>
-            <p>Com esse plano vc pode falar 30 minutos pelo valor de seu plano e so paga o excedente</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+        <div class="row card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-success"">
+              <h4 class="my-0 font-weight-normal">FaleMais 30</h4>
+            </div>
+            <p class=m-4>Com esse plano vc pode falar 30 minutos pelo valor de seu plano e so paga o excedente</p>
+            <a class="btn btn-success btn-lg" href="#simule" role="button">Simule a sua fatura</a>
           </div>
-          <div class="col-md-4">
-            <h2>FaleMais 60</h2>
-            <p>Com esse plano vc pode falar 60 minutos pelo valor de seu plano e so paga o excedente</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+          <div class="card mb-4 shadow-sm">
+             <div class="card-header bg-primary"">
+              <h4 class="my-0 font-weight-normal">FaleMais 60</h4>
+            </div>
+            <p class=m-4>Com esse plano vc pode falar 60 minutos pelo valor de seu plano e so paga o excedente</p>
+            <a class="btn btn-primary btn-lg" href="#simule" role="button">Simule a sua fatura</a>
           </div>
-          <div class="col-md-4">
-            <h2>FaleMais 120</h2>
-            <p>Com esse plano vc pode falar 120 minutos pelo valor de seu plano e so paga o excedente</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Simule a sua fatura</a></p>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-danger">
+              <h4 class="my-0 font-weight-normal">FaleMais 120</h4>
+            </div>
+            <p class=m-4>Com esse plano vc pode falar 120 minutos pelo valor de seu plano e so paga o excedente</p>
+            <a class="btn btn-danger btn-lg" href="#simule" role="button">Simule a sua fatura</a>
           </div>
         </div>
+        
 
         <hr>
         <div class="row">
           <div class="col-md-12">
             <div class="mt-3">
-              <h2>Simule os preço da sua fatura</h2>
-              
+              <h2 id="simule">Simule os preço da sua fatura</h2>
+              <p>Para saber qual melhor plano para voce, utilize o nosso simulador</p> 
+              <p>Voce pode escolher os códigos das cidades de origem e destino, o tempo da ligação em minutos e escolher qual o plano FaleMais.</p>
+              <p>O sistema vai cacular os valores para voce, o valor da ligação com o plano e sem o plano. Assim fica facil escolher qual o melhor plano.</p>
             </div>
-            
             <table id="table_price" class="table order-list table-hover">
               <thead>
                   <tr>
